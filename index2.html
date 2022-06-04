@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./Css/style.css">
+    <title>Document</title>
+</head>
+<body>
+
+<header id="header">
+    <h2 class="title-center">Carrito de compras </h2>
+</header>
+    
+<main>
+    <section>
+                <form action="#" method="post">
+                    <fieldset>
+                        <legend> Pedido        </legend>
+                         
+<h2 class="title-center"> Selecciona productos </h2>
+                        <div class="row">
+                            <div class="col-25" >
+                                <label for="Productos"> Productos </label>
+                            </div>
+                            <div class="col-75">
+                                <select name="selProducto" id="selProducto">
+                                    <option value="leche">Leche</option>
+                                    <option  value="carne">carne</option>
+                                    <option value="tomate">tomate</option>
+                                </select>
+                            </div>
+                        </div>
+
+
+                        <div class="row">
+                            <div class="col-25" >
+                                <label for="cantidad">Cantidad</label>
+                            </div>
+                            <div class="col-75">
+                                <input type="number" name="cantidad" id="cantidad" required >
+                            </div>
+                        </div>
+                        <div>
+                            <div class="title-center">
+                                <label for="agregar">Agregar mas elementos a la lista</label>
+                            </div>
+                            <div class="row">
+                                <div class="col-25" >
+                                    <label class="title-label" for="nombreProducto">Nombre producto</label>
+                                </div>
+                                <div class="col-75">
+                                    <input type="text" name="nombreProducto" id="txtNombreProducto">
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-25" >
+                                    <label class="title-label" for="precioProducto">Precio producto</label>
+                                </div>
+                                <div class="col-75">
+                                    <input type="number" name="precioProducto" id="numberPrecioProducto">      
+                                </div>
+                             </div>
+                        </div>
+
+                        <button id="agregar" type="button">AgregarProducto</button>
+                        <br>
+                        <div>
+                             <h2 class="title-center"> Resultado carrito</h2>
+                             <div>
+                                <ol  id="ListaProductos">
+                                   
+                                </ol>
+                             </div>
+                             <span id="resultado"></span>
+                        </div>
+
+
+                    <button id="mostrar" type="button">AgregarCarrito</button>
+                    <button id="borrar" type="reset">BorrarCarrito</button>
+
+         
+            </fieldset>
+                </form>
+
+    </section>
+</main>
+<script src="./js/index2.js"></script>
+</body>
+</html>
