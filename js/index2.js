@@ -93,12 +93,14 @@ function agregarSelect()
 //eliminar lista
 function Borrar(e){
     e.preventDefault();
-    for(i=carritoProductos.length;i>0;i--){ 
+    f=carritoProductos.length;
+    console.log(f);
+    for(i=carritoProductos.length;i>=0;i--){ 
         carritoProductos.pop();
+        console.log(carritoProductos)
     }
-    for(i=listaProductos.length;i>3;i--){
-   listaProductos.pop();
-    }
+    console.log(f);
+    mostrarListaFinal();
 }
 
 const btnAgregar = document.getElementById('agregar');
